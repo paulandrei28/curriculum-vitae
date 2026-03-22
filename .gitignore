@@ -1,16 +1,6 @@
-# Python cache
 __pycache__/
 *.pyc
-
-# Virtual environment
-venv/
 .venv/
-
-# PyCharm
+venv/
 .idea/
-
-# Environment variables
 .env
-
-# Logs
-*.log
