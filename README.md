@@ -6,10 +6,10 @@ Premium Flask application that presents my curriculum vitae as an interactive we
 
 ```bash
 pip install -r requirements.txt
-python curriculum_vitae_application.py
+python app.py
 ```
 
-Then open `http://127.0.0.1:5000` in your browser.
+Then open `http://127.0.0.1:10000` in your browser.
 
 ## Features
 

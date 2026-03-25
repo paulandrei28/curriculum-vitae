@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, send_from_directory
 from curriculum_vitae_content import curriculum_vitae_content
 
@@ -19,5 +20,5 @@ def download_curriculum_vitae():
     )
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))

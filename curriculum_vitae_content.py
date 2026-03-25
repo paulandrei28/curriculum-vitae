@@ -168,7 +168,7 @@ curriculum_vitae_content = {
             ]
         },
         {
-            "name": "Proiect-PA Calendar App",
+            "name": "Calendar App",
             "description": "Android / Java calendar application project developed as part of academic work.",
             "stack": "Java, Android",
             "repo_url": "https://github.com/paulandrei28/Proiect-PA",
