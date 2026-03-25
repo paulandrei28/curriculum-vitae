@@ -1,23 +1,23 @@
 curriculum_vitae_content = {
     "name": "Paul-Andrei Sipos",
-    "headline": "Python Developer · Automation Engineer · Backend Engineer · Test Engineer",
+    "headline": "Python Developer · Automation Engineer · Backend Engineer · Test Automation Engineer",
     "summary": (
         "Results-driven Software Engineer with 5+ years of experience in Python development, backend systems, "
-        "and large-scale test automation in the automotive industry. I build practical internal platforms, "
-        "developer tools, and API-driven automation that remove manual work, improve validation quality, and "
-        "help teams move faster across complex engineering workflows."
-    ),
+        "and large-scale test automation in the automotive industry. I design and build internal platforms, "
+        "developer tools, and API-driven automation that eliminate manual work, improve validation quality, "
+        "and accelerate engineering workflows across complex systems."
+),
     "location": "Brașov, Romania",
     "email": "paulandreis@yahoo.com",
     "phone": "+40 744 371 312",
     "github": "https://github.com/paulandrei28",
     "linkedin": "https://www.linkedin.com/in/paul-andrei-sipos-0559191a3",
     "highlights": [
-        "Automated around 70% of manual testing workflows across ~1500+ test cases",
-        "Built Python tooling around Polarion, ATP, EB ITA, GitLab, Jenkins, and embedded targets",
-        "Designed utilities for UDP signal injection, debugging, validation flows, and developer productivity",
-        "Focused on removing repeated engineering work with scalable internal automation"
-    ],
+        "Automated ~70% of manual testing workflows across 1500+ test cases",
+        "Developed Python tooling integrating Polarion, ATP, EB ITA, GitLab, and Jenkins",
+        "Built utilities for UDP signal injection, debugging, and validation workflows",
+        "Focused on eliminating repetitive engineering tasks through scalable automation"
+],
     "experience": [
         {
             "company": "Elektrobit Automotive Romania",
@@ -25,14 +25,14 @@ curriculum_vitae_content = {
             "period": "Nov 2021 – Present",
             "details": [
                 "Develop backend and automation tools for automotive software testing environments.",
-                "Built Python automation frameworks that automated approximately 70% of manual testing workflows, covering around 1500+ test cases.",
-                "Extract test cases, metadata, and validation inputs from Polarion through REST APIs and transform them into executable assets for internal testing platforms such as ATP and EB ITA.",
-                "Designed automation flows that reduced repetitive manual setup, accelerated regression cycles, and improved reliability of validation runs.",
-                "Created internal developer tools and UI utilities for sending UDP signals to embedded targets, simplifying debugging, manual test execution, and scenario control.",
-                "Integrated internal systems and engineering workflows using REST APIs including Polarion and GitLab.",
-                "Contributed to CI/CD-oriented automation and engineering processes using Jenkins and GitLab.",
-                "Worked closely with developers, testers, and system engineers in Agile Scrum teams to improve workflow efficiency and test coverage."
-            ]
+                "Designed and implemented Python automation frameworks that reduced manual testing by approximately 70%, covering over 1500 test cases.",
+                "Extract test cases, metadata, and validation inputs from Polarion via REST APIs and transform them into executable assets for internal testing platforms such as ATP and EB ITA.",
+                "Built automation pipelines that reduced repetitive manual setup, accelerated regression cycles, and improved validation reliability.",
+                "Developed internal tools and UI utilities for UDP signal injection to embedded targets, simplifying debugging and manual test execution.",
+                "Integrated internal systems and engineering workflows using REST APIs, including Polarion and GitLab.",
+                "Contributed to CI/CD pipelines and automation processes using Jenkins and GitLab.",
+                "Collaborated with developers, testers, and system engineers in Agile Scrum teams to improve workflow efficiency and test coverage."
+]
         },
         {
             "company": "People Power",
@@ -47,7 +47,7 @@ curriculum_vitae_content = {
             "role": "Game Developer Intern",
             "period": "Jun 2021 – Jul 2021",
             "details": [
-                "Built interactive applications with Unity and C# in a collaborative development environment."
+                "Developed interactive applications using Unity and C# in a collaborative environment."
             ]
         },
         {
@@ -55,7 +55,7 @@ curriculum_vitae_content = {
             "role": "Web Developer Intern",
             "period": "Jun 2020 – Jul 2020",
             "details": [
-                "Worked with Node.js, Angular, and IBM Cloud services to build web application features."
+                "Developed web application features using Node.js, Angular, and IBM Cloud services."
             ]
         },
         {
@@ -63,7 +63,7 @@ curriculum_vitae_content = {
             "role": "Database Programmer Intern",
             "period": "Apr 2017 – Jul 2017",
             "details": [
-                "Gained early experience in SQL, data handling, and software workflows inside an enterprise environment."
+                "Gained foundational experience in SQL, data handling, and enterprise software workflows."
             ]
         }
     ],
@@ -91,8 +91,8 @@ curriculum_vitae_content = {
             ]
         },
         {
-            "name": "Lidar Car",
-            "description": "Python project for a Raspberry Pi controlled car that can be manually driven from the keyboard or left to move autonomously using lidar input.",
+            "name": "LiDAR Car",
+            "description": "Python project for a Raspberry Pi controlled car that can be manually driven from the keyboard or left to move autonomously using LiDAR input.",
             "stack": "Python, Raspberry Pi, Lidar, Hardware Control",
             "repo_url": "https://github.com/paulandrei28/lidar_car",
             "details": [
@@ -189,7 +189,7 @@ curriculum_vitae_content = {
             ]
         },
         {
-            "institution": "National College of Informatics Grigore Moisil",
+            "institution": "National College of Computer Science \"Grigore Moisil\"",
             "period": "2014 – 2018",
             "details": [
                 "Built a strong early foundation in programming, databases, and software application development."
@@ -198,10 +198,10 @@ curriculum_vitae_content = {
     ],
     "skills": {
         "Languages": ["Python", "C/C++", "C#", "JavaScript", "TypeScript", "Java", "SQL"],
-        "Backend & APIs": ["REST APIs", "API Integrations", "Polarion API", "GitLab API", "Flask", "Microservices"],
-        "Automation & QA": ["Python Automation", "Test Automation", "Workflow Automation", "CI/CD", "Jenkins", "Validation Tooling"],
+        "Backend & APIs": ["REST APIs", "API Integration", "Polarion API", "GitLab API", "Flask", "Microservices"],
+        "Automation & QA": ["Test Automation", "Workflow Automation", "CI/CD", "Jenkins", "Validation Tooling"],
         "Tools & Platforms": ["Git", "GitHub", "GitLab", "Gerrit", "PostgreSQL", "Grafana", "Unity", "Angular", "IBM Cloud"],
-        "Engineering Context": ["Embedded Testing", "UDP Communication", "Signal Injection", "Agile", "Scrum", "Developer Productivity"],
+        "Engineering Context": ["Embedded Systems Testing", "UDP Communication", "Signal Injection", "Agile", "Scrum", "Developer Productivity"],
         "Languages Spoken": ["English", "French", "Spanish"]
-    }
+}
 }
