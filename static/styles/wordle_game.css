@@ -227,6 +227,14 @@
 .keyboard-btn.keyboard-special {
     min-width: 50px;
     font-size: 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-color: #1e40af;
+}
+
+.keyboard-btn.keyboard-special:hover {
+    background-color: #1d4ed8;
+    border-color: #1e3a8a;
 }
 
 .keyboard-btn.keyboard-correct {
@@ -311,16 +319,41 @@
         font-size: 16px;
     }
 
+    .wordle-keyboard {
+        width: 100%;
+    }
+
+    .keyboard-row {
+        width: 100%;
+        display: grid;
+        justify-content: stretch;
+        gap: 4px;
+    }
+
+    .wordle-keyboard .keyboard-row:nth-child(1) {
+        grid-template-columns: repeat(10, minmax(0, 1fr));
+    }
+
+    .wordle-keyboard .keyboard-row:nth-child(2) {
+        grid-template-columns: repeat(9, minmax(0, 1fr));
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .wordle-keyboard .keyboard-row:nth-child(3) {
+        grid-template-columns: 1.4fr repeat(7, minmax(0, 1fr)) 1.4fr;
+    }
+
     .keyboard-btn {
-        padding: 6px 8px;
-        min-width: 36px;
-        height: 36px;
+        width: 100%;
+        min-width: 0;
+        height: 38px;
+        padding: 0;
         font-size: 12px;
     }
 
     .keyboard-btn.keyboard-special {
-        min-width: 44px;
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .wordle-message {
@@ -352,10 +385,12 @@
     }
 
     .keyboard-btn {
-        padding: 4px 6px;
-        min-width: 32px;
-        height: 32px;
+        height: 34px;
         font-size: 11px;
+    }
+
+    .keyboard-btn.keyboard-special {
+        font-size: 10px;
     }
 }
 

@@ -132,6 +132,8 @@ curriculum_vitae_content = {
                 "Includes direct links to GitHub, LinkedIn, and downloadable resume PDF.",
             ],
         },
+    ],
+    "learning_projects": [
         {
             "name": "LiDAR Car",
             "description": "Raspberry Pi controlled autonomous vehicle with manual keyboard control and LiDAR-based autonomous navigation.",
@@ -156,8 +158,6 @@ curriculum_vitae_content = {
                 "Showcases automation capabilities with physical devices.",
             ],
         },
-    ],
-    "learning_projects": [
         {
             "name": "Fake Fruit Ninja",
             "description": "Unity game project that recreates the core feel of Fruit Ninja as a gameplay and mechanics exercise.",

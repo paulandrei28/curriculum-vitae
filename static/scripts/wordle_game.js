@@ -65,7 +65,13 @@ class WordleGame {
                 if (!letter) return;
                 
                 const btn = document.createElement("button");
-                btn.textContent = letter.length > 1 ? letter.slice(0, 3) : letter;
+                if (letter === "BACKSPACE") {
+                    btn.textContent = "⌫";
+                } else if (letter === "ENTER") {
+                    btn.textContent = "Enter";
+                } else {
+                    btn.textContent = letter;
+                }
                 btn.className = "keyboard-btn";
                 btn.setAttribute("data-key", letter);
                 
