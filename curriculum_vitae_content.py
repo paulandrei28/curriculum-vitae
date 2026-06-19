@@ -1,38 +1,48 @@
 curriculum_vitae_content = {
     "name": "Paul-Andrei Sipos",
-    "headline": "Python Developer · Automation Engineer · Backend Engineer · Test Automation Engineer",
+    "headline": "Backend Software Engineer | Python Developer",
     "summary": (
-        "Results-driven Software Engineer with 5+ years of experience in Python development, backend systems, "
-        "and large-scale test automation in the automotive industry. I design and build internal platforms, "
-        "developer tools, and API-driven automation that eliminate manual work, improve validation quality, "
-        "and accelerate engineering workflows across complex systems."
-),
+        "Software Engineer with 5+ years of professional experience developing backend systems, "
+        "automation frameworks, API integrations, and developer productivity tools. Experienced in Python "
+        "development, REST APIs, microservices, distributed systems, CI/CD automation, and PostgreSQL. "
+        "At Elektrobit Automotive, developed Python automation solutions that automated approximately 85% "
+        "of manual testing workflows (~2000 test cases) through Polarion REST API integrations and custom "
+        "execution frameworks. Built and maintained software solutions that improved engineering productivity, "
+        "reduced manual effort, and streamlined testing processes. Strong interest in backend engineering, "
+        "cloud-native systems, automation, and scalable software architecture."
+    ),
     "location": "Brașov, Romania",
     "email": "paulandreis@yahoo.com",
     "phone": "+40 744 371 312",
     "github": "https://github.com/paulandrei28",
     "linkedin": "https://www.linkedin.com/in/paul-andrei-sipos-0559191a3",
     "highlights": [
-        "Automated ~70% of manual testing workflows across 1500+ test cases",
-        "Developed Python tooling integrating Polarion, ATP, EB ITA, GitLab, and Jenkins",
-        "Built utilities for UDP signal injection, debugging, and validation workflows",
-        "Focused on eliminating repetitive engineering tasks through scalable automation"
-],
+        "Automated ~85% of manual testing workflows across ~2000 test cases",
+        "Designed and implemented REST API integrations with Polarion, ATP, and EB ITA platforms",
+        "Built production-grade microservices with circuit breakers, health checks, and distributed tracing",
+        "Developed automation frameworks eliminating repetitive engineering tasks through scalable solutions",
+    ],
     "experience": [
         {
             "company": "Elektrobit Automotive Romania",
             "role": "Software Engineer",
             "period": "Nov 2021 – Present",
             "details": [
-                "Develop backend and automation tools for automotive software testing environments.",
-                "Designed and implemented Python automation frameworks that reduced manual testing by approximately 70%, covering over 1500 test cases.",
-                "Extract test cases, metadata, and validation inputs from Polarion via REST APIs and transform them into executable assets for internal testing platforms such as ATP and EB ITA.",
-                "Built automation pipelines that reduced repetitive manual setup, accelerated regression cycles, and improved validation reliability.",
-                "Developed internal tools and UI utilities for UDP signal injection to embedded targets, simplifying debugging and manual test execution.",
-                "Integrated internal systems and engineering workflows using REST APIs, including Polarion and GitLab.",
-                "Contributed to CI/CD pipelines and automation processes using Jenkins and GitLab.",
-                "Collaborated with developers, testers, and system engineers in Agile Scrum teams to improve workflow efficiency and test coverage."
-]
+                "Developed Python-based automation frameworks automating approximately 85% of manual testing workflows (~2000 test cases).",
+                "Designed and implemented REST API integrations with Polarion, ATP, and EB ITA platforms.",
+                "Built backend services and automation tools using Python and PostgreSQL.",
+                "Developed software solutions for data extraction, transformation, and automated workflow generation.",
+                "Improved engineering productivity by eliminating repetitive manual testing activities.",
+                "Automated the conversion of Polarion test specifications into executable automated tests.",
+                "Continuously identified manual engineering processes and developed software solutions to automate and streamline workflows.",
+                "Developed internal desktop applications and UI utilities for UDP signal injection and embedded target communication.",
+                "Built tools supporting debugging, validation, and automated test execution.",
+                "Worked with distributed test environments and embedded software systems.",
+                "Collaborated with software developers, testers, and system engineers in Agile teams.",
+                "Contributed to GitLab and Jenkins CI/CD pipelines.",
+                "Integrated automated testing into continuous integration workflows.",
+                "Supported release validation and regression testing activities.",
+            ],
         },
         {
             "company": "People Power",
@@ -40,7 +50,7 @@ curriculum_vitae_content = {
             "period": "Jul 2021 – Aug 2021",
             "details": [
                 "Worked with AutoCAD and Revit in a technical design environment."
-            ]
+            ],
         },
         {
             "company": "IBM Romania",
@@ -48,7 +58,7 @@ curriculum_vitae_content = {
             "period": "Jun 2021 – Jul 2021",
             "details": [
                 "Developed interactive applications using Unity and C# in a collaborative environment."
-            ]
+            ],
         },
         {
             "company": "IBM Romania",
@@ -56,7 +66,7 @@ curriculum_vitae_content = {
             "period": "Jun 2020 – Jul 2020",
             "details": [
                 "Developed web application features using Node.js, Angular, and IBM Cloud services."
-            ]
+            ],
         },
         {
             "company": "DTR Draexlmaier Technical Systems Romania",
@@ -64,120 +74,156 @@ curriculum_vitae_content = {
             "period": "Apr 2017 – Jul 2017",
             "details": [
                 "Gained foundational experience in SQL, data handling, and enterprise software workflows."
-            ]
-        }
+            ],
+        },
     ],
     "projects": [
         {
+            "name": "NexuShop - Distributed E-Commerce Platform",
+            "description": "Production-grade microservices e-commerce architecture demonstrating self-healing patterns, circuit breakers, distributed tracing, and observability at scale.",
+            "stack": "Python, FastAPI, Flask, RabbitMQ, PostgreSQL, Redis, Docker, Prometheus, Grafana, Jaeger, OpenTelemetry",
+            "repo_url": "https://github.com/paulandrei28/nexushop",
+            "details": [
+                "Designed and implemented distributed microservices architecture with circuit breakers and health checks.",
+                "Developed backend APIs using FastAPI and Flask with comprehensive error handling.",
+                "Integrated RabbitMQ message queues for asynchronous communication and saga pattern orchestration.",
+                "Implemented Redis caching, rate limiting, and PostgreSQL persistence.",
+                "Added production-style monitoring with Prometheus, Grafana, and distributed tracing via Jaeger and OpenTelemetry.",
+                "Containerized services using Docker and Docker Compose with health checks.",
+                "Implemented CI/CD workflows and production-style deployment practices with GitHub Actions.",
+            ],
+        },
+        {
+            "name": "Automated Trading Platform",
+            "description": "Python-based automated trading system with strategy execution, portfolio monitoring, backtesting, and Monte Carlo simulation for systematic trading validation.",
+            "stack": "Python, Interactive Brokers API, Backtesting Framework, Data Analysis, Monte Carlo",
+            "repo_url": "https://github.com/paulandrei28/trading_bot",
+            "details": [
+                "Implemented FVG (Fair Value Gap) breakout trading strategy with paper and live trading modes.",
+                "Built Monte Carlo engine and comprehensive backtesting framework with metrics analysis.",
+                "Integrated Interactive Brokers API (ib_insync) for real-time data and order execution.",
+                "Developed bracket order management, position tracking, and daily journal logging for trade analysis.",
+                "Created Flask dashboard with Socket.IO for real-time monitoring and strategy performance visualization.",
+            ],
+        },
+        {
+            "name": "Romanian Word of The Day (RWOTD)",
+            "description": "Progressive Web Application for language learning with offline functionality, daily vocabulary challenges, streak tracking, and push notifications.",
+            "stack": "JavaScript, HTML5, CSS3, Service Workers, Cloudflare Workers, PWA",
+            "repo_url": "https://github.com/paulandrei28/RWOTD",
+            "details": [
+                "Developed Progressive Web App supporting full offline functionality with service workers.",
+                "Implemented PWA features including installation capability and push notifications.",
+                "Designed mobile-first user experience focused on daily engagement and vocabulary learning.",
+                "Built streak and milestone tracking system stored in localStorage.",
+                "Integrated Cloudflare Workers for serverless backend operations and API interactions.",
+                "Curated 1200+ Romanian word database with definitions and usage examples.",
+            ],
+        },
+        {
             "name": "Curriculum Vitae Web Application",
-            "description": "Premium Flask-based curriculum vitae website with tabbed navigation, downloadable PDF, and a polished recruiter-facing presentation layer.",
+            "description": "Premium Flask-based portfolio website with tabbed navigation, downloadable PDF resume, and polished recruiter-facing presentation.",
             "stack": "Python, Flask, HTML, CSS, JavaScript",
             "repo_url": "https://github.com/paulandrei28/curriculum-vitae",
             "details": [
                 "Transforms a static resume into an interactive portfolio experience.",
                 "Uses clear content separation between application logic, data, templates, and static assets.",
-                "Includes direct links to GitHub, LinkedIn, and a downloadable resume PDF."
-            ]
-        },
-        {
-            "name": "Trading Bot",
-            "description": "Python trading and backtesting workspace for systematic strategy testing, report generation, Monte Carlo analysis, and Interactive Brokers integration through Trader Workstation.",
-            "stack": "Python, Backtesting, Data Analysis, IBKR / TWS",
-            "repo_url": "https://github.com/paulandrei28/trading_bot",
-            "details": [
-                "Organized into strategy, backtest, data, and TWS integration modules.",
-                "Supports historical data handling, metrics, Monte Carlo evaluation, and IBKR connectivity tests.",
-                "Built as a practical playground for testing rule-based trading ideas with reusable tooling."
-            ]
+                "Features tabbed sections for experience, projects, skills, and education.",
+                "Includes direct links to GitHub, LinkedIn, and downloadable resume PDF.",
+            ],
         },
         {
             "name": "LiDAR Car",
-            "description": "Python project for a Raspberry Pi controlled car that can be manually driven from the keyboard or left to move autonomously using LiDAR input.",
-            "stack": "Python, Raspberry Pi, Lidar, Hardware Control",
+            "description": "Raspberry Pi controlled autonomous vehicle with manual keyboard control and LiDAR-based autonomous navigation.",
+            "stack": "Python, Raspberry Pi, LiDAR, Hardware Control",
             "repo_url": "https://github.com/paulandrei28/lidar_car",
             "details": [
                 "Combines robotics-style control logic with real-world sensor input.",
-                "Includes autonomous roaming and manual maneuvering modes.",
-                "Shows hands-on work with embedded hardware and environmental sensing."
-            ]
+                "Supports both manual keyboard control and autonomous navigation modes.",
+                "Demonstrates hands-on work with embedded hardware, sensor integration, and hardware APIs.",
+                "Shows practical embedded systems development and robotics experimentation.",
+            ],
         },
         {
             "name": "Drone Experiments",
-            "description": "Collection of Python demos built around a DJI Tello drone, including flight experiments, utility functions, and computer-vision-related scripts.",
-            "stack": "Python, DJI Tello, Automation, Computer Vision",
+            "description": "Collection of Python automation demos for DJI Tello drone including flight control, computer vision integration, and utility functions.",
+            "stack": "Python, DJI Tello SDK, Computer Vision, Automation",
             "repo_url": "https://github.com/paulandrei28/drone",
             "details": [
                 "Structured as a set of demos and helper scripts for drone control and experimentation.",
-                "Includes modules related to depth, facial recognition, and interactive testing.",
-                "Reflects practical experimentation with scripting, hardware APIs, and vision workflows."
-            ]
+                "Includes modules for depth sensing, facial recognition, and interactive testing.",
+                "Demonstrates practical experimentation with hardware APIs and vision workflows.",
+                "Showcases automation capabilities with physical devices.",
+            ],
         },
+    ],
+    "learning_projects": [
         {
             "name": "Fake Fruit Ninja",
-            "description": "Unity game project that recreates the core feel of Fruit Ninja as a personal gameplay and mechanics exercise.",
+            "description": "Unity game project that recreates the core feel of Fruit Ninja as a gameplay and mechanics exercise.",
             "stack": "C#, Unity",
             "repo_url": "https://github.com/paulandrei28/fake-fruit-ninja",
             "details": [
                 "Built as a game replica to practice mechanics, interaction, and scene organization.",
                 "Demonstrates hands-on work with Unity project structure and C# scripting.",
-                "Represents a clean example of gameplay-focused prototyping."
-            ]
+                "Represents a clean example of gameplay-focused prototyping.",
+            ],
         },
         {
             "name": "Calculathor",
-            "description": "Desktop calculator application created as a focused C# project for interface logic and everyday utility functionality.",
+            "description": "Desktop calculator application built as a focused C# project for interface logic and utility functionality.",
             "stack": "C#, .NET",
             "repo_url": "https://github.com/paulandrei28/calculathor",
             "details": [
                 "Small but complete desktop application with a clear utility use case.",
                 "Useful as a showcase of UI wiring, event handling, and application structure in C#.",
-                "Reflects an early foundation in desktop software development."
-            ]
+                "Reflects an early foundation in desktop software development.",
+            ],
         },
         {
             "name": "Editoru",
-            "description": "Tabbed text editor desktop application built in C# as a compact productivity-oriented project.",
+            "description": "Tabbed text editor desktop application built in C# as a compact productivity tool.",
             "stack": "C#, .NET, Desktop UI",
             "repo_url": "https://github.com/paulandrei28/editoru",
             "details": [
                 "Supports multiple tabs for working with more than one text document at a time.",
                 "Represents a lightweight editor built around practical desktop functionality.",
-                "Shows experience with classic application flows and local file interaction."
-            ]
+                "Shows experience with classic application flows and local file interaction.",
+            ],
         },
         {
             "name": "Highscores",
-            "description": "C# project used to experiment with database connections and a simple score-oriented data model.",
+            "description": "C# project used to experiment with database connections and score-oriented data persistence.",
             "stack": "C#, SQL, Database Connectivity",
             "repo_url": "https://github.com/paulandrei28/highscores",
             "details": [
-                "Pairs a C# application with a SQL script for data persistence work.",
+                "Pairs a C# application with SQL backend for data persistence work.",
                 "Focused on learning and testing database connectivity concepts.",
-                "Useful as an example of early full-stack desktop plus database experimentation."
-            ]
+                "Example of early full-stack desktop plus database experimentation.",
+            ],
         },
         {
             "name": "Angular Tour of Heroes Practice",
-            "description": "Angular practice project generated with Angular CLI and used to explore component-based frontend development.",
+            "description": "Angular practice project for exploring component-based frontend development patterns.",
             "stack": "Angular, TypeScript, HTML, CSS",
             "repo_url": "https://github.com/paulandrei28/practica-angular-tour-of-heroes",
             "details": [
                 "Based on the Tour of Heroes style training project structure.",
-                "Includes standard Angular configuration, dev server, unit testing, and end-to-end testing setup.",
-                "Represents early frontend practice with TypeScript and Angular conventions."
-            ]
+                "Includes standard Angular configuration, dev server, and testing setup.",
+                "Represents early frontend practice with TypeScript and Angular conventions.",
+            ],
         },
         {
             "name": "Calendar App",
-            "description": "Android / Java calendar application project developed as part of academic work.",
+            "description": "Android calendar application developed as part of academic coursework.",
             "stack": "Java, Android",
             "repo_url": "https://github.com/paulandrei28/Proiect-PA",
             "details": [
                 "Repository contains a calendar app Android project and supporting files.",
                 "Demonstrates work on mobile application structure in Java.",
-                "Reflects coursework-driven software development with a practical end-user feature set."
-            ]
-        }
+                "Reflects coursework-driven software development with practical end-user features.",
+            ],
+        },
     ],
     "education": [
         {
@@ -185,23 +231,87 @@ curriculum_vitae_content = {
             "period": "2018 – 2022",
             "details": [
                 "Specialized in systems engineering, robotics, digital electronics, object-oriented programming, SQL, and MATLAB.",
-                "Worked across C/C++, C#, JavaScript, Android Studio, HTML, CSS, XML, and software engineering fundamentals."
-            ]
+                "Worked across C/C++, C#, JavaScript, Android Studio, HTML, CSS, XML, and software engineering fundamentals.",
+            ],
         },
         {
-            "institution": "National College of Computer Science \"Grigore Moisil\"",
+            "institution": 'National College of Computer Science "Grigore Moisil"',
             "period": "2014 – 2018",
             "details": [
                 "Built a strong early foundation in programming, databases, and software application development."
-            ]
-        }
+            ],
+        },
     ],
     "skills": {
-        "Languages": ["Python", "C/C++", "C#", "JavaScript", "TypeScript", "Java", "SQL"],
-        "Backend & APIs": ["REST APIs", "API Integration", "Polarion API", "GitLab API", "Flask", "Microservices"],
-        "Automation & QA": ["Test Automation", "Workflow Automation", "CI/CD", "Jenkins", "Validation Tooling"],
-        "Tools & Platforms": ["Git", "GitHub", "GitLab", "Gerrit", "PostgreSQL", "Grafana", "Unity", "Angular", "IBM Cloud"],
-        "Engineering Context": ["Embedded Systems Testing", "UDP Communication", "Signal Injection", "Agile", "Scrum", "Developer Productivity"],
-        "Languages Spoken": ["English", "French", "Spanish"]
-}
+        "Languages": [
+            "Python",
+            "JavaScript",
+            "TypeScript",
+            "SQL",
+            "C#",
+            "Java",
+            "C/C++",
+        ],
+        "Backend & APIs": [
+            "FastAPI",
+            "Flask",
+            "REST APIs",
+            "API Design",
+            "Backend Services",
+            "Microservices",
+            "Distributed Systems",
+            "Event-Driven Architecture",
+            "REST API Integration",
+            "Polarion API",
+            "GitLab API",
+        ],
+        "Databases & Caching": ["PostgreSQL", "Redis", "RabbitMQ", "SQL"],
+        "DevOps & CI/CD": [
+            "Docker",
+            "Git",
+            "GitHub",
+            "GitLab",
+            "Gerrit",
+            "Jenkins",
+            "CI/CD Pipelines",
+        ],
+        "Observability & Monitoring": [
+            "Prometheus",
+            "Grafana",
+            "Jaeger",
+            "OpenTelemetry",
+            "Structured Logging",
+        ],
+        "Automation & QA": [
+            "Python Automation Frameworks",
+            "Test Automation",
+            "Workflow Automation",
+            "System Integration",
+            "Regression Testing",
+            "UDP Communication",
+            "Embedded Systems Testing",
+            "Raspberry Pi",
+            "Agile",
+            "Scrum",
+            "Continuous Integration",
+            "Continuous Delivery",
+        ],
+        "Specialized Skills": [
+            "System Design",
+            "Backend Architecture",
+            "AI-Assisted Software Development",
+            "Automation & Process Optimization",
+            "Developer Productivity Engineering",
+            "Problem Solving & Debugging",
+            "Technical Documentation",
+            "Cross-Functional Collaboration",
+            "Continuous Learning",
+            "Software Engineering Best Practices",
+        ],
+        "Languages Spoken": [
+            "English (Advanced)",
+            "Romanian (Native)",
+            "Spanish (Elementary)",
+        ],
+    },
 }

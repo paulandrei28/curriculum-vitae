@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ curriculum_vitae.name }} | Curriculum Vitae</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/curriculum_vitae_styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/wordle_game.css') }}">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SQRZ1S1G62"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SQRZ1S1G62');
+    </script>
 </head>
 <body>
     <div class="page-shell">
@@ -86,6 +95,31 @@
                             </article>
                         {% endfor %}
                     </div>
+                    
+                    {% if curriculum_vitae.learning_projects %}
+                    <div class="learning-projects-section">
+                        <h2>Learning & Practice Projects</h2>
+                        <div class="content-grid projects-grid">
+                            {% for item in curriculum_vitae.learning_projects %}
+                                <article class="content-card project-card">
+                                    <div class="project-header">
+                                        <div>
+                                            <h3>{{ item.name }}</h3>
+                                            <p class="tagline">{{ item.stack }}</p>
+                                        </div>
+                                        <a class="mini-link" href="{{ item.repo_url }}" target="_blank" rel="noreferrer">Open Repo</a>
+                                    </div>
+                                    <p>{{ item.description }}</p>
+                                    <ul>
+                                        {% for detail in item.details %}
+                                            <li>{{ detail }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </article>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
                 </section>
 
                 <section class="tab-section" id="skills">
@@ -123,6 +157,34 @@
             </section>
         </main>
     </div>
+
+    <!-- Wordle Game Easter Egg -->
+    <button id="wordle-toggle-button" class="wordle-toggle-btn" title="Play Wordle">🎮</button>
+    
+    <div id="wordle-game-modal" class="wordle-modal">
+        <div class="wordle-game-container">
+            <div class="wordle-header">
+                <h2>Recruiter Wordle</h2>
+                <button id="wordle-close-button" class="wordle-close-btn" aria-label="Close game">&times;</button>
+            </div>
+            
+            <div class="wordle-content">
+                <div id="wordle-board" class="wordle-board"></div>
+                
+                <div class="wordle-keyboard">
+                    <div class="keyboard-row" id="keyboard-row-1"></div>
+                    <div class="keyboard-row" id="keyboard-row-2"></div>
+                    <div class="keyboard-row" id="keyboard-row-3"></div>
+                </div>
+                
+                <div id="wordle-message" class="wordle-message"></div>
+            </div>
+            
+            <button id="wordle-restart-button" class="wordle-restart-btn" style="display: none;">Play Again</button>
+        </div>
+    </div>
+
     <script src="{{ url_for('static', filename='scripts/curriculum_vitae_tabs.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/wordle_game.js') }}"></script>
 </body>
 </html>
