@@ -1,24 +1,24 @@
 const WORD_BANK = [
-    "PYTHON", "FASTAPI", "DOCKER", "DEPLOY", "BACKEND", "MICROSERVICES",
-    "FRAMEWORK", "DATABASE", "CACHE", "REDIS", "POSTGRE", "QUERY",
-    "STREAM", "EVENT", "KAFKA", "MESSAGING", "QUEUE", "PIPELINE",
-    "BUILD", "TEST", "DEBUG", "GITHUB", "COMMIT", "BRANCH",
-    "MERGE", "SYSTEM", "DESIGN", "SCALE", "OPTIMIZE", "PROFILE",
-    "MONITOR", "ALERT", "TRACE", "METRIC", "GRAFANA", "LOGGING",
-    "DEPLOY", "RELEASE", "STABLE", "ROBUST", "SECURE", "AUDIT",
-    "RECRUIT", "HIRING", "INTERVIEW", "SKILLS", "PROFILE", "RESUME",
-    "CAREER", "GROWTH", "LEARN", "MENTOR", "COLLABORATE", "TEAM",
-    "AGILE", "SCRUM", "SPRINT", "BACKLOG", "STORY", "ESTIMATE",
-    "REFACTOR", "LINT", "FORMAT", "STYLE", "CLEAN", "SOLID",
-    "PATTERN", "FACADE", "PROXY", "CHAIN", "STATE", "STRATEGY",
-    "FACTORY", "SINGLETON", "BUILDER", "ADAPTER", "BRIDGE", "COMPOSITE",
-    "ASYNC", "AWAIT", "THREAD", "PROCESS", "SIGNAL", "HANDLE",
-    "ERROR", "EXCEPTION", "FAULT", "RECOVER", "RETRY", "CIRCUIT",
-    "PROXY", "GATEWAY", "ROUTER", "SWITCH", "NETWORK", "SOCKET",
-    "PROTOCOL", "REQUEST", "RESPONSE", "HEADER", "PAYLOAD", "STATUS",
-    "LOGIN", "TOKEN", "SESSION", "COOKIE", "OAUTH", "SAML",
-    "ENCRYPT", "DECRYPT", "HASH", "SALT", "CIPHER", "KEY",
-    "VALIDATE", "VERIFY", "CERTIFY", "AUTHENTICATE", "AUTHORIZE", "PERMISSION"
+    "AGILE",
+    "SCRUM",
+    "ARRAY",
+    "CHARS",
+    "STACK",
+    "CACHE",
+    "QUERY",
+    "DEBUG",
+    "TOKEN",
+    "MERGE",
+    "TESTS",
+    "BUILD",
+    "PATCH",
+    "RETRO",
+    "STORY",
+    "SKILL",
+    "HIRES",
+    "ROLES",
+    "OFFER",
+    "ISSUE"
 ];
 
 class WordleGame {
@@ -89,7 +89,10 @@ class WordleGame {
     }
     
     initializeGame() {
-        this.word = WORD_BANK[Math.floor(Math.random() * WORD_BANK.length)];
+        const validWords = WORD_BANK.filter(
+            (word) => word.length === this.maxLetters
+        );
+        this.word = validWords[Math.floor(Math.random() * validWords.length)];
         this.guesses = [];
         this.currentGuess = "";
         this.gameOver = false;
